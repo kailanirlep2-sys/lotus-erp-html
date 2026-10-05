@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LOTUS 365 ERP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<aside class="sidebar">
+  <div class="brand"><div class="logo">L</div><div><b>LOTUS 365</b><span>Business ERP</span></div></div>
+  <div class="company"><span>Default Company</span><strong>⌄</strong></div>
+  <nav id="nav">
+    <button class="active" data-page="dashboard">▦ <span>Dashboard</span></button>
+    <button data-page="customers">♙ <span>Customers</span></button>
+    <button data-page="products">▤ <span>Products</span></button>
+    <button data-page="inventory">◫ <span>Inventory</span></button>
+    <button data-page="sales">₹ <span>Sales</span></button>
+    <button data-page="purchase">🛒 <span>Purchase</span></button>
+    <button data-page="accounting">◈ <span>Accounting</span></button>
+    <button data-page="reports">▥ <span>Reports</span></button>
+    <button data-page="settings">⚙ <span>Settings</span></button>
+  </nav>
+  <div class="sidebar-foot">LOTUS 365<br><small>Developed by Nirlep Kaila</small></div>
+</aside>
+<main class="main">
+<header><div><div class="crumb">Business Management / <b id="pageName">Dashboard</b></div><h1 id="title">Executive Dashboard</h1></div><div class="head-actions"><button id="quickAdd" class="primary">＋ New Transaction</button><div class="avatar">NK</div></div></header>
+<section id="content"></section>
+</main>
+</div>
+<div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-head"><h2 id="modalTitle">New Record</h2><button id="closeModal">×</button></div><form id="recordForm"></form></div></div>
+<script src="app.js"></script>
+</body></html>
